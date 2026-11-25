@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Juanita’s Diner</title>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Nunito:wght@600;800&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<link rel="stylesheet" href="juanportfolio.css">
+</head>
+<body>
+<div id="wrap">
+  <canvas id="c" aria-label="3D diner. Drag to look around, click glowing things."></canvas>
+  <div class="ui" id="tip">click & drag to look around · click the glowing things</div>
+  <div class="ui" id="nav"></div>
+  <div class="pnl" id="pnl"><div class="card" id="card"></div></div>
+  <div id="intro"><h1>Juanita’s Diner</h1><p>Pull up a stool. The regulars are waiting, the jukebox is warm, and the neon never sleeps.</p><button class="btn" id="go">step inside</button></div>
+</div>
+
+<!-- order matters: content → setup → lights → world → people → gallery → panels → main -->
+<script src="content.js"></script>
+<script src="setup.js"></script>
+<script src="lights.js"></script>
+<script src="world.js"></script>
+<script src="people.js"></script>
+<script src="gallery.js"></script>
+<script src="panels.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
